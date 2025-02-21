@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: grey;
+}
+
+.main {
+  width: 90%;
+  max-width: 140rem;
+  min-height: 90vh;
+  margin: 2rem auto;
+  background: #fefefe;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.input-container {
+  display: grid;
+  grid-template-columns: 90fr 5fr;
+}
+.message-input,
+.message-output {
+  /* width: 90%; */
+  border: 1px solid black;
+  border-radius: 1.3rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: left;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  align-self: center;
+}
