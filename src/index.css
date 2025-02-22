@@ -1,3 +1,4 @@
+/* Global Reset */
 *,
 *::before,
 *::after {
@@ -8,50 +9,80 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.5;
-  background: grey;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
 }
 
+/* Main Container */
 .main {
   width: 90%;
-  max-width: 140rem;
-  min-height: 90vh;
-  margin: 2rem auto;
-  background: #fefefe;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: flex-end;
+  max-width: 900px;
+  background: #222831;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
-  border-radius: 1rem;
 }
-.input-container {
-  display: grid;
-  grid-template-columns: 90fr 5fr;
-}
+
+/* Message Input & Output */
 .message-input,
 .message-output {
-  /* width: 90%; */
-  border: 1px solid black;
-  border-radius: 1.3rem;
-  padding: 1rem;
-  margin: 1rem;
-  text-align: left;
+  border: 1px solid #393e46;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background: #2e2e38;
+  color: #eeeeee;
 }
-button {
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid black;
+
+/* Input Container */
+.input-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.text-input {
+  flex: 1;
   padding: 1rem;
-  border-radius: 0.5rem;
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  align-self: center;
+  border: 1px solid #00adb5;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  background: #181818;
+  color: #fefefe;
+}
+
+/* Button */
+button {
+  background: #00adb5;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+button:hover {
+  background: #008c9e;
+  transform: scale(1.1);
 }

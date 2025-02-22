@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import "../TextProcessor.css";
 const TextProcessor = () => {
   const [inputText, setInputText] = useState("");
   const [messages, setMessages] = useState([]);
