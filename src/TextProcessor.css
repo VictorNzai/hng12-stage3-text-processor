@@ -24,6 +24,8 @@ body {
     border-radius: 6px;
     border: 1px solid #393e46;
     color: white;
+    min-height: 150px; /* Adjust height as needed */
+  resize: vertical;
   }
   
   .input-container {
@@ -39,6 +41,8 @@ body {
     font-size: 1.6rem;
     background: #2e2e38;
     color: white;
+    min-height: 150px; /* Adjust height as needed */
+  resize: vertical;
   }
   
   button {

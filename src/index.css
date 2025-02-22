@@ -29,7 +29,7 @@ body {
 /* Main Container */
 .main {
   width: 90%;
-  max-width: 900px;
+  max-width: 3000px;
   background: #222831;
   padding: 2rem;
   border-radius: 1.2rem;
@@ -47,6 +47,8 @@ body {
   padding: 1.2rem;
   background: #2e2e38;
   color: #eeeeee;
+  min-height: 150px; /* Adjust height as needed */
+  resize: vertical;
 }
 
 /* Input Container */

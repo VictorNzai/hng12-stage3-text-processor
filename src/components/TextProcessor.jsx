@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+// import axios from "axios";
+import "../TextProcessor.css";
 
 const TextProcessor = () => {
   const [inputText, setInputText] = useState(""); // User input text
